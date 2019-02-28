@@ -13,25 +13,66 @@ MongoClient.connect(url, function(err, db) {
        // console.log(data)
      //var json = JSON.parse(data);
      var jsonData = data;
+         
+     var date = new Date();
+console.log(date); // Wed Jan 01 2014 13:28:56 GMT-1000 (Hawaiian Standard Time) 
+        
+var json = JSON.stringify(date);
+var timestamp = json
+console.log(json); 
      //console.log(json)
     // parse json
      var jsonParsed = JSON.parse(jsonData); 
-     console.log(jsonParsed);
- 
-
-dbo.collection("customer").insertMany(jsonParsed ,function(err, res) {
+     //console.log(jsonParsed);
+     setTimeout(function () {
+        console.log('boo')
+        console.log(jsonParsed[0]);  
+dbo.collection("customer").insertOne(jsonParsed[0] , date ,function(err, res) {
    if (err) throw err;
-   console.log(" document inserted");
-   db.close();
-})
-});
-setTimeout(() => {
-    console.log("end here");  
-}, 5000);
+   console.log(" document inserted 2 sec.");
+ setTimeout(function (){
 
-        
+
+   db.close();
+}, 10000)
+
+})
+}, 2000)
+
+setTimeout(function () { 
+    console.log("hiii");
+    console.log(jsonParsed[1]);
+dbo.collection("customer").insertOne(jsonParsed[1] ,function(err, res) {
+    if (err) throw err;
+    console.log(" document inserted in 8 sec.");
+  
+    setTimeout(function (){
+
+
+        db.close();
+     }, 9000)
+     
+})
+ }, 8000)
+ setTimeout(function () { 
+    console.log("hiii");
+    console.log(jsonParsed[2]);
+dbo.collection("customer").insertOne(jsonParsed[2] ,function(err, res) {
+    if (err) throw err;
+    console.log(" document inserted in 12 sec.");
+  
+    db.close();
+})
+}, 12000)
+     })
+
+//setTimeout(() => {
+  //  console.log("end here");  
+    //5000});
 });
 
 
          
+      
+     
       
