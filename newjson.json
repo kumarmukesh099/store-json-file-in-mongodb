@@ -1,7 +1,82 @@
-[{"name": "John", "location": "San Jose"} ,
+ [{       
+       "Timestamp" : "Time" ,
+       "MDM_stat_sat1_Power" : "0 or 1"  ,
+       "MDM_stat_sat1_status" :"0 or 1" ,
+       "MDM_stat_sat1_Rx" :    "0 or 1" ,
+       "MDM_stat_sat1_Tx" :    "0 or 1" ,
+       "MDM_stat_sat1_Temperature" :  "0 to 70" ,
+       "MDM_stat_sat1_Cpu" :   "0 to 100" ,
+
+       "MDM_stat_sat2_Power" : "0 or 1"  ,
+       "MDM_stat_sat2_status" :"0 or 1" ,
+       "MDM_stat_sat2_Rx" :    "0 or 1" ,
+       "MDM_stat_sat2_Tx" :    "0 or 1" ,
+       "MDM_stat_sat2_Temperature" :  "0 to 70" ,
+       "MDM_stat_sat2_Cpu" :   "0 to 100" ,
+
+       "MDM_stat_LTE_Power" : "0 or 1"  ,
+       "MDM_stat_LTE_status" :"0 or 1" ,
+       "MDM_stat_LTE_Rx" :    "0 or 1" ,
+       "MDM_stat_LTE_Tx" :    "0 or 1" ,
+       "MDM_stat_LTE_Temperature" :  "0 to 70" ,
+       "MDM_stat_LTE_Cpu" :   "0 to 100" ,
+
+       "MDM_stat_WIFI_Power" : "0 or 1"  ,
+       "MDM_stat_WIFI_status" :"0 or 1" ,
+       "MDM_stat_WIFI_Rx" :    "0 or 1" ,
+       "MDM_stat_WIFI_Tx" :    "0 or 1" ,
+       "MDM_stat_WIFI_Temperature" :  "0 to 70" ,
+       "MDM_stat_WIFI_Cpu" :   "0 to 100" ,
+
+        "Download_rate_LTE" : "LTE" ,
+        "Download_rate_WIFI" : "WIFI" ,
+        "Download_rate_Satellite" :  "Satellite",
+
+        "Upload_rate_LTE" : "LTE" ,
+        "Upload_rate_WIFI" : "WIFI" ,
+        "Upload_rate_Satellite" : "Satellite",
+
+        "Downlink_Quality_LTE" : "LTE" ,
+        "Downlink_Quality_WIFI" : "WIFI" ,
+        "Downlink_Quality_Satellite" : "Satellite",
+       
+        "Uplink_Quality_LTE" : "LTE" ,
+        "Uplink_Quality_WIFI" : "WIFI" ,
+        "Uplink_Quality_Satellite" : "Satellite"
+  
+ } ,
  {"name": "Hardik", "location": "Delhi"} , 
  {"name": "Mukesh", "location":"Haryana"}
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
